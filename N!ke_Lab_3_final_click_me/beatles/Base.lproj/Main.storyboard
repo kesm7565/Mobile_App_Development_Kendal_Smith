@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="beatles" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="XX2-5q-c5l">
+                                <rect key="frame" x="20" y="30" width="335" height="359"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="wYA-ut-S14">
+                                        <rect key="frame" x="118.5" y="0.0" width="98.5" height="133"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="100" verticalHuggingPriority="251" image="Nike_1" translatesAutoresizingMaskIntoConstraints="NO" id="Wxh-zt-GSr">
+                                                <rect key="frame" x="0.0" y="0.0" width="98.5" height="64.5"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nike Logo #1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZh-zx-Xie">
+                                                <rect key="frame" x="0.0" y="112.5" width="98.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="pks-yH-aPE">
+                                        <rect key="frame" x="0.0" y="181" width="335" height="178"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="ils-22-bju">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="178"/>
+                                                <subviews>
+                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="16f-5D-2TO">
+                                                        <rect key="frame" x="71" y="0.0" width="193" height="32"/>
+                                                        <segments>
+                                                            <segment title="Nike logo #2"/>
+                                                            <segment title="Nike logo #3"/>
+                                                        </segments>
+                                                        <connections>
+                                                            <action selector="changeInfo:" destination="BYZ-38-t0r" eventType="valueChanged" id="fL7-C5-LLv"/>
+                                                        </connections>
+                                                    </segmentedControl>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="ajn-4f-s0S">
+                                                        <rect key="frame" x="69" y="74" width="197.5" height="31"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capitalization" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XgK-5b-gaL">
+                                                                <rect key="frame" x="0.0" y="0.0" width="103.5" height="31"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="J4d-n2-pWk">
+                                                                <rect key="frame" x="148.5" y="0.0" width="51" height="31"/>
+                                                                <connections>
+                                                                    <action selector="updateFont:" destination="BYZ-38-t0r" eventType="valueChanged" id="SFg-PO-zA8"/>
+                                                                </connections>
+                                                            </switch>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="78" translatesAutoresizingMaskIntoConstraints="NO" id="qqu-Ll-jlS">
+                                                        <rect key="frame" x="0.0" y="148" width="335" height="30"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SnI-FM-kp1">
+                                                                <rect key="frame" x="0.0" y="2.5" width="0.0" height="25.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15" minValue="6" maxValue="22" translatesAutoresizingMaskIntoConstraints="NO" id="mdc-W5-Wrp">
+                                                                <rect key="frame" x="76" y="0.0" width="261" height="31"/>
+                                                                <color key="tintColor" systemColor="systemPinkColor"/>
+                                                                <connections>
+                                                                    <action selector="changeFontSize:" destination="BYZ-38-t0r" eventType="valueChanged" id="wNX-Se-9e6"/>
+                                                                </connections>
+                                                            </slider>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <variation key="heightClass=compact-widthClass=compact" axis="horizontal" spacing="11"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XX2-5q-c5l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0gP-do-a6a"/>
+                            <constraint firstItem="XX2-5q-c5l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6TN-8K-eUM"/>
+                            <constraint firstItem="XX2-5q-c5l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OnX-Ju-kHA"/>
+                            <constraint firstItem="XX2-5q-c5l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bxU-AD-RNN"/>
+                            <constraint firstItem="XX2-5q-c5l" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="gls-sV-3HC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XX2-5q-c5l" secondAttribute="trailing" constant="20" id="j6v-lm-ht5"/>
+                            <constraint firstItem="XX2-5q-c5l" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ksr-dR-m6k"/>
+                            <constraint firstItem="XX2-5q-c5l" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="x9I-hV-b7Z"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="OnX-Ju-kHA"/>
+                                <exclude reference="bxU-AD-RNN"/>
+                                <exclude reference="ksr-dR-m6k"/>
+                                <exclude reference="x9I-hV-b7Z"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="OnX-Ju-kHA"/>
+                                <include reference="bxU-AD-RNN"/>
+                                <include reference="ksr-dR-m6k"/>
+                                <include reference="x9I-hV-b7Z"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="capitalSwitch" destination="J4d-n2-pWk" id="pts-an-5Dh"/>
+                        <outlet property="changeFontSize" destination="mdc-W5-Wrp" id="I2n-2k-0gX"/>
+                        <outlet property="fontSizeSlider" destination="mdc-W5-Wrp" id="0Ts-xp-aSZ"/>
+                        <outlet property="fontSizeText" destination="SnI-FM-kp1" id="noi-03-G7t"/>
+                        <outlet property="nikeImage" destination="Wxh-zt-GSr" id="uTt-gu-xna"/>
+                        <outlet property="titleLabel" destination="KZh-zx-Xie" id="hHp-Vb-irL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="129.98500749625188" y="136.80000000000001"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Nike_1" width="86.333335876464844" height="64.666664123535156"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
