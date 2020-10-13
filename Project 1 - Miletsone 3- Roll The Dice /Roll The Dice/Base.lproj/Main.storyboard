@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Roll_The_Dice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="sCy-oe-j2o">
+                                <rect key="frame" x="37.666666666666657" y="116.66666666666669" width="300" height="578.66666666666652"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="4pZ-4H-0Me">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="184"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreenImage-1" translatesAutoresizingMaskIntoConstraints="NO" id="gnA-Sd-Nho">
+                                                <rect key="frame" x="72.999999999999986" y="0.0" width="153.66666666666663" height="77.333333333333329"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many dice would you like to roll?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aTR-Kl-Bqd">
+                                                <rect key="frame" x="8.3333333333333428" y="89.333333333333329" width="283" height="20.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9D-wj-jJb">
+                                                <rect key="frame" x="146" y="121.66666666666667" width="7.6666666666666572" height="20.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="9" translatesAutoresizingMaskIntoConstraints="NO" id="MRB-zk-DfO">
+                                                <rect key="frame" x="-2" y="154" width="304" height="31"/>
+                                                <color key="tintColor" red="0.33793950210000001" green="0.96187177720000006" blue="0.90364496839999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="300" id="r7u-fP-yhR"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="numberOfDiceSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="AYE-Y0-5wb"/>
+                                                </connections>
+                                            </slider>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="TSx-Xs-QtW">
+                                        <rect key="frame" x="0.0" y="191" width="300" height="96.666666666666686"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="How many faces?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buc-ck-gA6">
+                                                <rect key="frame" x="83" y="0.0" width="134" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXc-B0-GW2">
+                                                <rect key="frame" x="146" y="33.333333333333314" width="7.6666666666666572" height="20.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="9" translatesAutoresizingMaskIntoConstraints="NO" id="8Pf-gV-BFb">
+                                                <rect key="frame" x="-2" y="66.666666666666629" width="304" height="31"/>
+                                                <color key="tintColor" red="0.33793950210000001" green="0.96187177720000006" blue="0.90364496839999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="300" id="dTG-GG-0qU"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="numberOfFacesSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="Qxs-Ur-V7l"/>
+                                                </connections>
+                                            </slider>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TPK-gN-tKW">
+                                        <rect key="frame" x="54" y="294.66666666666663" width="192" height="284"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4C-db-qUj">
+                                                <rect key="frame" x="24.666666666666657" y="0.0" width="142.33333333333334" height="82"/>
+                                                <state key="normal" image="roll_image"/>
+                                                <connections>
+                                                    <action selector="rollDiceButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zSe-uq-NsE"/>
+                                                </connections>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="OaP-dj-9qB">
+                                                <rect key="frame" x="0.0" y="92" width="192" height="192"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="OUG-Di-dcG">
+                                                        <rect key="frame" x="0.0" y="0.0" width="192" height="58.666666666666664"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dicePlaceHolder1" translatesAutoresizingMaskIntoConstraints="NO" id="LxC-14-Cxu">
+                                                                <rect key="frame" x="0.0" y="0.0" width="58.666666666666664" height="58.666666666666664"/>
+                                                            </imageView>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dicePlaceHolder1" translatesAutoresizingMaskIntoConstraints="NO" id="J3h-M1-mAW">
+                                                                <rect key="frame" x="66.666666666666671" y="0.0" width="58.666666666666671" height="58.666666666666664"/>
+                                                            </imageView>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dicePlaceHolder1" translatesAutoresizingMaskIntoConstraints="NO" id="EAj-LO-sFU">
+                                                                <rect key="frame" x="133.33333333333331" y="0.0" width="58.666666666666657" height="58.666666666666664"/>
+                                                            </imageView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="akd-W1-qaZ">
+                                                        <rect key="frame" x="0.0" y="66.666666666666686" width="192" height="58.666666666666657"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dicePlaceHolder1" translatesAutoresizingMaskIntoConstraints="NO" id="5qi-gd-yAK">
+                                                                <rect key="frame" x="0.0" y="0.0" width="58.666666666666664" height="58.666666666666664"/>
+                                                            </imageView>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dicePlaceHolder1" translatesAutoresizingMaskIntoConstraints="NO" id="N9w-ms-9uf">
+                                                                <rect key="frame" x="66.666666666666671" y="0.0" width="58.666666666666671" height="58.666666666666664"/>
+                                                            </imageView>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dicePlaceHolder1" translatesAutoresizingMaskIntoConstraints="NO" id="Jjl-Ag-sfY">
+                                                                <rect key="frame" x="133.33333333333331" y="0.0" width="58.666666666666657" height="58.666666666666664"/>
+                                                            </imageView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gXN-Nc-7zV">
+                                                        <rect key="frame" x="0.0" y="133.33333333333331" width="192" height="58.666666666666657"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dicePlaceHolder1" translatesAutoresizingMaskIntoConstraints="NO" id="q1G-fI-ILt">
+                                                                <rect key="frame" x="0.0" y="0.0" width="58.666666666666664" height="58.666666666666664"/>
+                                                            </imageView>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dicePlaceHolder1" translatesAutoresizingMaskIntoConstraints="NO" id="ZNc-2W-mbK">
+                                                                <rect key="frame" x="66.666666666666671" y="0.0" width="58.666666666666671" height="58.666666666666664"/>
+                                                            </imageView>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dicePlaceHolder1" translatesAutoresizingMaskIntoConstraints="NO" id="ZJk-9o-Fce">
+                                                                <rect key="frame" x="133.33333333333331" y="0.0" width="58.666666666666657" height="58.666666666666664"/>
+                                                            </imageView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sCy-oe-j2o" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ros-Rm-Qns"/>
+                            <constraint firstItem="sCy-oe-j2o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZYp-62-T0J"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="diceImageEight" destination="ZNc-2W-mbK" id="1fr-fn-1zj"/>
+                        <outlet property="diceImageFive" destination="N9w-ms-9uf" id="ynr-bL-8io"/>
+                        <outlet property="diceImageFour" destination="5qi-gd-yAK" id="UUF-bK-ldu"/>
+                        <outlet property="diceImageNine" destination="ZJk-9o-Fce" id="fqz-i9-siq"/>
+                        <outlet property="diceImageOne" destination="LxC-14-Cxu" id="7GK-ZY-3U4"/>
+                        <outlet property="diceImageSeven" destination="q1G-fI-ILt" id="5T3-Gk-p9s"/>
+                        <outlet property="diceImageSix" destination="Jjl-Ag-sfY" id="Wve-Zq-4pY"/>
+                        <outlet property="diceImageThree" destination="EAj-LO-sFU" id="1Cw-pd-Efz"/>
+                        <outlet property="diceImageTwo" destination="J3h-M1-mAW" id="JX7-E6-UQR"/>
+                        <outlet property="diceSlider" destination="MRB-zk-DfO" id="Hx6-0G-KuT"/>
+                        <outlet property="facesSlider" destination="8Pf-gV-BFb" id="RyH-7i-o7J"/>
+                        <outlet property="numberOfDice" destination="y9D-wj-jJb" id="aFN-JX-yyt"/>
+                        <outlet property="numberOfFaces" destination="DXc-B0-GW2" id="D30-RX-6jv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="127.90178571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dicePlaceHolder1" width="58.666667938232422" height="58.666667938232422"/>
+        <image name="launchScreenImage-1" width="153.66667175292969" height="77.333335876464844"/>
+        <image name="roll_image" width="142.33332824707031" height="82"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
