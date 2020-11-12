@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Lab 8</string>
+    <string name="icecream_heading">Favorite Ice Cream</string>
+    <string name="Chocolate">chocolate</string>
+    <string name="Vanilla">vanilla</string>
+    <string name="Sherbert">sherburt</string>
+    <string name="icecreamButton">Create Your Ice Cream</string>
+    <string name="Sprinkles">sprinkles</string>
+    <string name="chocolateChips">chocolate chips</string>
+    <string name="oreoCrumbles">oreo crumbles</string>
+    <string name="gummyBears">gummy bears</string>
+    <string name="sugarSwitch">Sugar Free</string>
+    <string-array name = "location">
+        <item>The Hill</item>
+        <item>29th Street</item>
+        <item>Pearl St.</item>
+    </string-array>
+</resources>
