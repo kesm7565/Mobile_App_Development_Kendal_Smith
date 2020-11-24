@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Lab 8</string>
+    <string name="icecream_heading">Favorite Ice Cream</string>
+    <string name="Chocolate">chocolate</string>
+    <string name="Vanilla">vanilla</string>
+    <string name="Sherbert">sherburt</string>
+    <string name="icecreamButton">Create Your Ice Cream</string>
+    <string name="Sprinkles">sprinkles</string>
+    <string name="chocolateChips">chocolate chips</string>
+    <string name="oreoCrumbles">oreo crumbles</string>
+    <string name="gummyBears">gummy bears</string>
+    <string name="sugarSwitch">Sugar Free</string>
+    <string name="locationButton">Find Ice Cream</string>
+    <string-array name="location">
+        <item>Sweet Cow</item>
+        <item>Dairy Queen</item>
+        <item>Glacier</item>
+    </string-array>
+    <string name="title_activity_ice_cream">Ice Cream Activity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="feedbackEditText">Feedback</string>
+</resources>
