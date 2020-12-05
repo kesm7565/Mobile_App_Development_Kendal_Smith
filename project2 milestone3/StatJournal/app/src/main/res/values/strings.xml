@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Stat Journal</string>
+    <string name="intoText">How are you feeling today?</string>
+    <string name="dailyEntry">Today I Feel...</string>
+    <string name="submitButton">Submit</string>
+    <string name="Entries" />
+    <string name="entriesButton">Entries</string>
+    <string name="journalEntryDisplay" />
+    <string name="sendMessage" />
+    <string name="topWordsUsedTitle">Your Top Words Used</string>
+    <string name="wordNumberOne">#1 Word</string>
+    <string name="wordNumberTwo">#2 Word</string>
+    <string name="wordNumberThree">#3 Word</string>
+    <string name="journalEntryPlaceHolder1">journalEntry1</string>
+    <string name="searchButton">Search your own word</string>
+    <string name="search">Search</string>
+    <string name="displayWordCount" />
+    <string name="searchResults">Search Results</string>
+    <string name="search1">Click Here To Search Your Own Word</string>
+    <string name="search2">Search Your Word</string>
+    <string name="searchOtherWords">Click To Search Other Words</string>
+    <string name="textVieww3">Interesting Words You Used</string>
+    <string name="title">Interesting Words Used</string>
+</resources>
